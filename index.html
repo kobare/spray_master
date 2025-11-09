@@ -40,6 +40,29 @@
     padding-top: 60px; /* Adjust as needed for mobile header */
   }
 }
+
+
+/* Make service content visible by default instead of only on hover */
+.tmponhover {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Remove any hover effects that hide the content */
+.single-project-style-three .inner-content.tmponhover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  margin-bottom: 40px;
+}
+
+/* If there are any transitions that fade in on hover, remove them */
+.single-project-style-three:hover .inner-content.tmponhover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 </style> 
 </head>
 
@@ -302,17 +325,13 @@
      <!-- In-house Paint Mixing -->
      <div class="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div class="single-project-style-three invers-anime">
-       <a href="#" class="thumbnail">
+       <a class="thumbnail">
         <img loading="lazy" src="assets/images/services/06.jpg" alt="In-house Paint Mixing">
        </a>
        <div class="inner-content tmponhover">
-        <a href="#">
+        <a>
          <h4 class="title">In-house Paint Mixing</h4>
         </a>
-        <span>
-         Featuring our Max Meyer (France) paint system with precision matching and
-         mixing technology to achieve a flawless 100% colour match every time.
-        </span>
        </div>
       </div>
      </div>
@@ -320,17 +339,13 @@
      <!-- Detailing -->
      <div class="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div class="single-project-style-three invers-anime">
-       <a href="#" class="thumbnail">
+       <a class="thumbnail">
         <img loading="lazy" src="assets/images/services/09.jpg" alt="Detailing">
        </a>
        <div class="inner-content tmponhover">
-        <a href="#">
+        <a>
          <h4 class="title">Detailing & Valeting</h4>
         </a>
-        <span>
-         Complete auto detailing and valeting services designed to restore, protect,
-         and enhance your vehicle’s showroom finish.
-        </span>
        </div>
       </div>
      </div>
@@ -338,17 +353,13 @@
      <!-- Blueprinting -->
      <div class="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div class="single-project-style-three invers-anime">
-       <a href="#" class="thumbnail">
+       <a class="thumbnail">
         <img loading="lazy" src="assets/images/services/12.jpg" alt="Blueprinting">
        </a>
        <div class="inner-content tmponhover">
-        <a href="#">
+        <a>
          <h4 class="title">Blueprinting Process</h4>
         </a>
-        <span>
-         Our blueprinting process involves a full disassembly and damage assessment,
-         ensuring every repair is accurate, efficient, and fully accounted for.
-        </span>
        </div>
       </div>
      </div>
@@ -356,17 +367,13 @@
      <!-- Mechanical Service -->
      <div class="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div class="single-project-style-three invers-anime">
-       <a href="#" class="thumbnail">
+       <a class="thumbnail">
         <img loading="lazy" src="assets/images/services/14.jpg" alt="Mechanical Service">
        </a>
        <div class="inner-content tmponhover">
-        <a href="#">
+        <a>
          <h4 class="title">Mechanical Services</h4>
         </a>
-        <span>
-         From minor tune-ups to major services, our mechanical experts ensure your
-         vehicle operates smoothly, safely, and reliably.
-        </span>
        </div>
       </div>
      </div>
