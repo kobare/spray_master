@@ -30117,4 +30117,11 @@ body.tmp-body-star::before {
 .active-light-mode.splash_bg .banner-splash-area p.description {
   color: #fff;
 }
+
+@media (max-width: 1400px) {
+    .position-relative {
+        position: static !important;
+    }
+}
+
 /*# sourceMappingURL=../maps/style.css.map */
