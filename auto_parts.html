@@ -35,6 +35,17 @@
   .tmp-section-gap {
    padding-top: 100px !important;
   }
+  
+/* Default: show desktop slider, hide mobile */
+.slider-mobile { display: none; }
+.slider-desktop { display: block; }
+
+/* Mobile screens: show mobile slider, hide desktop */
+@media (max-width: 768px) {
+  .slider-mobile { display: block; }
+  .slider-desktop { display: none; }
+}
+  
  </style>
 </head>
 
@@ -225,21 +236,38 @@
   <div class="row g-0">
    <div class="col-lg-12">
 
-    <div class="slider-portfolio-area"><br>
-     <h2 class="title tmp-title-split">Parts Department</h2>
-     <div class="slider-animation-2 slider-activation-2 slider-dot tmp-slick-dot tmp-slick-arrow tmp-slick-arrow-white">
-      <div class="slider-area d-flex">
-       <div class="thumbnail radious-6 large-image-portfolio-details">
-        <img src="assets/images/auto_parts/01.jpg" alt="auto-parts-1">
-       </div>
+<div class="slider-portfolio-area"><br>
+  <!-- <h2 class="title tmp-title-split">Parts Department</h2> -->
+
+  <!-- Mobile Slider -->
+  <div class="slider-animation-2 slider-activation-2 slider-dot tmp-slick-dot tmp-slick-arrow tmp-slick-arrow-white slider-mobile">
+    <div class="slider-area d-flex">
+      <div class="thumbnail radious-6 large-image-portfolio-details">
+        <img src="assets/images/auto_parts/01.jpg" alt="auto-parts-mobile-1">
       </div>
-      <div class="slider-area d-flex">
-       <div class="thumbnail radious-6 large-image-portfolio-details">
-        <img src="assets/images/auto_parts/02.jpg" alt="auto-parts-2">
-       </div>
-      </div>
-     </div>
     </div>
+    <div class="slider-area d-flex">
+      <div class="thumbnail radious-6 large-image-portfolio-details">
+        <img src="assets/images/auto_parts/02.jpg" alt="auto-parts-mobile-2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop Slider -->
+  <div class="slider-animation-2 slider-activation-2 slider-dot tmp-slick-dot tmp-slick-arrow tmp-slick-arrow-white slider-desktop">
+    <div class="slider-area d-flex">
+      <div class="thumbnail radious-6 large-image-portfolio-details">
+        <img src="assets/images/auto_parts/03.jpg" alt="auto-parts-desktop-1">
+      </div>
+    </div>
+    <div class="slider-area d-flex">
+      <div class="thumbnail radious-6 large-image-portfolio-details">
+        <img src="assets/images/auto_parts/04.jpg" alt="auto-parts-desktop-2">
+      </div>
+    </div>
+  </div>
+
+</div>
 
    </div>
   </div>

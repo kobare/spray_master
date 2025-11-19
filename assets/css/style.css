@@ -30145,4 +30145,21 @@ body.tmp-body-star::before {
     }
 }
 
+@media (min-width: 992px) {
+
+  /* Fix the slider container height */
+  .large-image-portfolio-details {
+    height: 500px;            /* Adjust height here */
+    overflow: hidden;         /* Important: crops the image */
+  }
+
+  /* Keep image original width, let it overflow vertically */
+  .large-image-portfolio-details img {
+    width: 100%;
+    height: auto;             /* Do NOT resize height */
+    object-fit: cover;        /* Fills container without looking stretched */
+    object-position: center;  /* Crop from center */
+  }
+}
+
 /*# sourceMappingURL=../maps/style.css.map */

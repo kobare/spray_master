@@ -35,6 +35,24 @@
   .tmp-section-gap {
    padding-top: 100px !important;
   }
+  
+@media (min-width: 992px) {
+
+  /* Fix the slider container height */
+  .large-image-portfolio-details {
+    height: 600px;            /* Adjust height here */
+    overflow: hidden;         /* Important: crops the image */
+  }
+
+  /* Keep image original width, let it overflow vertically */
+  .large-image-portfolio-details img {
+    width: 100%;
+    height: auto;             /* Do NOT resize height */
+    object-fit: cover;        /* Fills container without looking stretched */
+    object-position: center;  /* Crop from center */
+  }
+}
+  
  </style>
 </head>
 
@@ -226,7 +244,7 @@
    <div class="col-lg-12">
 
     <div class="slider-portfolio-area"><br>
-     <h2 class="title tmp-title-split">Our Parking Space</h2>
+     <!-- <h2 class="title tmp-title-split">Our Parking Space</h2> -->
      <div class="slider-animation-2 slider-activation-2 slider-dot tmp-slick-dot tmp-slick-arrow tmp-slick-arrow-white">
       <div class="slider-area d-flex">
 
