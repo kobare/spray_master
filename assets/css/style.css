@@ -98,6 +98,16 @@
 /**************************************
     Default Styles
 ***************************************/
+
+@font-face {
+  font-family: "Germany";
+  src: url("../fonts/custom/Germany.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /*-- Variables --*/
 :root {
   --color-primary: #800020; /* deep burgundy */
@@ -227,10 +237,12 @@
   --transition-3: transform .85s cubic-bezier(.23,1,.32,1),background .3s,border .3s,border-radius .3s,box-shadow .3s;
   --transition-4: all .25s cubic-bezier(.645,.045,.355,1);
 
-  --font-primary: "Plus Jakarta Sans", sans-serif;
+
+  --font-primary: "Plus Jakarta Sans", sans-serif;  
   --font-secondary: "Plus Jakarta Sans", sans-serif;
   --font-alt: "Source Serif Pro", serif;
   --font-awesome: "Font Awesome 5 Pro";
+  --font-title: "Germany", sans-serif;  
 
   --font-size-b1: 18px;
   --font-size-b2: 16px;
@@ -1081,6 +1093,15 @@ All Extend Here
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.title, button, .tmp-btn, ul.mainmenu li {
+  font-family: var(--font-title) !important;
+}
+
+/* exclude all children */
+ul.mainmenu li .description {
+  font-family: var(--font-primary) !important;
 }
 
 .inv-card .inner .content .title a, .inv-card .inner .thumbnail .card-image img, .inv-card, .about-author .media-body .author-info .title a, .tmp-single-widget.widget_recent_comments ul li span, .tmp-single-widget.widget_recent_entries ul li span, .tmp-single-widget.widget_archive ul li span, .tmp-single-widget.widget_categories ul li span, .tmp-single-widget.widget_meta ul li span, .tmp-single-widget.widget_pages ul li span, .tmp-single-widget.widget_nav_menu ul li span, .tmp-single-widget.widget_recent_comments ul li a, .tmp-single-widget.widget_recent_entries ul li a, .tmp-single-widget.widget_archive ul li a, .tmp-single-widget.widget_categories ul li a, .tmp-single-widget.widget_meta ul li a, .tmp-single-widget.widget_pages ul li a, .tmp-single-widget.widget_nav_menu ul li a, .tmp-address .inner p a, .tmp-card .inner .content .title a, .tmp-card .inner .thumbnail .card-image img, .tmp-card, .card-box .inner .content .title a, .service.service__style--2 .content p, .service.service__style--2 .content .title a, .service.service__style--2 .content .title, .service.gallery-style .content p, .service.gallery-style .content .title a, .service.gallery-style .content .title, .service.service__style--1 .content p, .service.service__style--1 .content .title a, .service.service__style--1 .content .title, .service.service__style--1 .icon, .mainmenu-nav .mainmenu li.has-droupdown .submenu li a, .form-group textarea, .form-group input, #scrollUp, ul li a, ol li a {
